@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_10_184312) do
+ActiveRecord::Schema.define(version: 2021_05_13_172130) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2021_05_10_184312) do
     t.text "description"
     t.string "image_file_name", default: "placeholder.png"
     t.integer "capacity", default: 1
+    t.string "slug"
   end
 
   create_table "likes", force: :cascade do |t|
